@@ -10,7 +10,7 @@ function Displaybook() {
 
     useEffect(() => {
         getContent()
-    }, [info])
+    }, )
 
     function getContent() {
         axios
@@ -24,12 +24,12 @@ function Displaybook() {
         <div>
             <Header></Header>
 
-            <div className='flex w-[100vw] h-[85vh]'>
-                <div className='w-[50vw] h-[85vh] flex justify-center items-center'>
-                    <img className='w-[90%] h-[100%]' src={''}></img>
+            <div className='flex w-[100vw] h-[85vh] max-md:flex-col'>
+                <div className='w-[50vw] max-md:w-[100vw] h-[85vh] flex justify-center items-center'>
+                    <img className='w-[90%] h-[100%]' src={info.book_image?info.book_image:null}></img>
 
                 </div>
-                <div className='w-[50vw] h-[85vh] flex flex-col justify-center gap-y-[2rem]'>
+                <div className='w-[50vw] max-md:w-[100vw] h-[85vh] flex flex-col justify-center gap-y-[2rem]'>
                     <p className='text-[1.2rem] font-bold'>Title : {info.book_title}</p>
                     <p className='text-[1.2rem] font-bold'>Summary : {info.summary}</p>
                     <p className='text-[1.2rem] font-bold'>{info.publication_dt}</p>

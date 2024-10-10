@@ -23,7 +23,7 @@ function Favorite() {
 
                 {
                     books.filter(book => book.userID == userID && book.tag == "like").map(filteredBook => (
-                        <div key={filteredBook.id} className='flex justify-center rounded-[5px] bg-slate-100 p-[10px] flex-col items-center w-[20vw] gap-y-[1rem]'>
+                        <div key={filteredBook.id} className='flex justify-center rounded-[5px] bg-slate-100 p-[10px] flex-col items-center max-md:w-[90vw] w-[20vw] gap-y-[1rem]'>
 
                             <img className='w-[90%]' src={filteredBook.book_image}></img>
                             <p className='text-[1.2rem] font-bold'>Title : {filteredBook.title}</p>

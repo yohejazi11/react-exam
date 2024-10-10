@@ -8,9 +8,9 @@ function Header() {
         <div className='w-[100vw] h-[15vh] flex items-center justify-between mb-[15vh] bg-[#10375C] text-white text-[1.5rem] font-bold border-b-[5px] border-[#EB8317] px-[2rem]'>
             <ul className='flex gap-x-[2rem] items-end text-[1.1rem]'>
                 <li className='text-[#F3C623] font-bold text-[2rem]'>HEJAZI Librarey</li>
-                <li><Link to={'/'}>Home</Link></li>
-                <li><Link to={'/favorite'}>Favorite</Link></li>
-                <li><Link to={'/readed'}>readed Book</Link></li>
+                <li ><Link to={'/'}>Home</Link></li>
+                <li className='max-md:hidden'><Link to={'/favorite'}>Favorite</Link></li>
+                <li className='max-md:hidden'><Link to={'/readed'}>readed Book</Link></li>
 
 
             </ul>

@@ -26,7 +26,7 @@ function Login() {
     return (
         <div className="h-[100vh] flex flex-col justify-start items-center">
             <Header></Header>
-            <div className="w-[50vw] p-[2rem] flex flex-col gap-y-[1rem] justify-center items-center rounded-[10px] bbg-[#F4F6FF]">
+            <div className="max-md:w-[90vw] w-[50vw] p-[2rem] flex flex-col gap-y-[1rem] justify-center items-center rounded-[10px] bg-[#F4F6FF]">
                 <p>log in</p>
                 <input className="h-[40px] w-[90%] border-[#EB8317] border-[1px] rounded-[5px]" type="text" value={email} onChange={(e) => { setEmail(e.target.value) }} placeholder="Enter Email"></input>
                 <input className="h-[40px] w-[90%] border-[#EB8317] border-[1px] rounded-[5px]" type="text" value={password} onChange={(e) => { setPassword(e.target.value) }} placeholder="Enter Password"></input>
