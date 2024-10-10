@@ -56,15 +56,15 @@ function Library() {
                             <img className='w-[90%]' src={book.book_image}></img>
                             <p className='text-[1.2rem] font-bold'>Title : {book.title}</p>
                             <p className='font-semibold'>Author : {book.author}</p>
-
-                            {userID ? <div className='flex justify-evenly items-center'>
-                                <button className='px-[23px] py-[16px] bg-[#10375C] text-white font-semibold rounded-[5px]' onClick={() => { addLike(book) }}>Like</button>
-                                <button className='px-[23px] py-[16px] bg-[#10375C] text-white font-semibold rounded-[5px]' onClick={() => { addRead(book) }}>read</button>
-                            </div> :
-                                null
-                            }
-
                         </Link>
+                        {userID ? <div className='flex justify-evenly items-center gap-x-[1rem]'>
+                            <button className='px-[23px] py-[16px] bg-[#10375C] text-white font-semibold rounded-[5px]' onClick={() => { addLike(book) }}>Like</button>
+                            <button className='px-[23px] py-[16px] bg-[#10375C] text-white font-semibold rounded-[5px]' onClick={() => { addRead(book) }}>read</button>
+                        </div> :
+                            null
+                        }
+
+
                     </div>
 
 

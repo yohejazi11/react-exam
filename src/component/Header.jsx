@@ -9,7 +9,7 @@ function Header() {
             <ul className='flex gap-x-[2rem] items-end text-[1.1rem]'>
                 <li className='text-[#F3C623] font-bold text-[2rem]'>HEJAZI Librarey</li>
                 <li ><Link to={'/'}>Home</Link></li>
-                <li className='max-md:hidden'><Link to={'/favorite'}>Favorite</Link></li>
+                <li className='max-md:hidden'><Link to={'/likes'}>Favorite</Link></li>
                 <li className='max-md:hidden'><Link to={'/readed'}>readed Book</Link></li>
 
 

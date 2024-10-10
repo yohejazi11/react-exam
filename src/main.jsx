@@ -37,11 +37,11 @@ const router = createBrowserRouter([
     element: <Displaybook></Displaybook>,
   },
   {
-    path: "/d",
+    path: "/likes",
     element: <Favorite></Favorite>,
   },
   {
-    path: "/s",
+    path: "/readed",
     element: <Readed></Readed>,
   },
 ]);
