@@ -4,7 +4,7 @@ import Header from './component/Header'
 import axios from 'axios'
 
 function Displaybook() {
-    const [info, setInfo] = useState([])
+    const [info, setInfo] = useState([{}])
     let { isbn } = useParams();
 
 
