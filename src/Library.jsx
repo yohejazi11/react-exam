@@ -52,12 +52,12 @@ function Library() {
                 {books.map(book => (
 
                     <div key={book.rank} className='flex flex-col justify-center rounded-[5px] bg-slate-100 p-[10px]'>
-                        <Link to={`/book/${book.primary_isbn10}`} className='flex flex-col justify-center items-center max-md:w-[90w] max-md:h-[100vh] w-[20vw] gap-y-[1rem]'>
+                        <Link to={`/book/${book.primary_isbn10}`} className='flex flex-col justify-center items-center mb-[1rem] max-md:w-[90w] max-md:h-[100vh] w-[20vw] gap-y-[1rem]'>
                             <img className='w-[90%]' src={book.book_image}></img>
                             <p className='text-[1.2rem] font-bold'>Title : {book.title}</p>
                             <p className='font-semibold'>Author : {book.author}</p>
                         </Link>
-                        {userID ? <div className='flex justify-evenly items-center gap-x-[1rem]'>
+                        {userID ? <div className='flex justify-evenly items-center gap-x-[0.5rem]'>
                             <button className='px-[23px] py-[16px] bg-[#10375C] text-white font-semibold rounded-[5px]' onClick={() => { addLike(book) }}>Like</button>
                             <button className='px-[23px] py-[16px] bg-[#10375C] text-white font-semibold rounded-[5px]' onClick={() => { addRead(book) }}>read</button>
                         </div> :
