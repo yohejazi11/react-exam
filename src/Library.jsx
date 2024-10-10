@@ -51,7 +51,7 @@ function Library() {
             <div className='book-container flex flex-wrap w-[100vw] justify-center gap-x-[2rem] gap-y-[2rem]'>
                 {books.map(book => (
 
-                    <div key={book.rank} className='flex justify-center rounded-[5px] bg-slate-100 p-[10px]'>
+                    <div key={book.rank} className='flex flex-col justify-center rounded-[5px] bg-slate-100 p-[10px]'>
                         <Link to={`/book/${book.primary_isbn10}`} className='flex flex-col justify-center items-center max-md:w-[90w] max-md:h-[100vh] w-[20vw] gap-y-[1rem]'>
                             <img className='w-[90%]' src={book.book_image}></img>
                             <p className='text-[1.2rem] font-bold'>Title : {book.title}</p>
